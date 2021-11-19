@@ -20,10 +20,11 @@ function drawBlank() {
 		ctx.fillStyle = 'rgb(200, 200, 200';
 		var X = canvas.width;
 		var Y = canvas.height;
-		ctx.fillRect(X, Y, X, Y);
+		ctx.fillRect(0, 0, X, Y);
 		console.log('Blank drawn');
 	} else {
 		// Canvas not supported by browser
+		console.log('Canvas not supported by browser');
 	}
 }
 
@@ -49,6 +50,7 @@ async function drawS() {
 
 	} else {
 		// Canvas not supported by browser
+		console.log('Canvas not supported by browser');
 	}
 }
 
