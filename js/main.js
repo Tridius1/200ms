@@ -20,7 +20,8 @@ function drawBlank() {
 		ctx.fillStyle = 'rgb(200, 200, 200';
 		var X = canvas.width;
 		var Y = canvas.height;
-		ctx.fillRect(X, Y, X, Y)
+		ctx.fillRect(X, Y, X, Y);
+		console.log('Blank drawn');
 	} else {
 		// Canvas not supported by browser
 	}
@@ -42,7 +43,7 @@ async function drawS() {
 		var X = canvas.width / 3;
 		var Y = canvas.height / 3;
     ctx.fillRect(X, Y, X, Y);
-
+    console.log('Square drawn');
     await sleep(190);
     drawBlank();
 
